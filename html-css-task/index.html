@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML & CSS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!--
+I will be following the BEM methodology for naming classes, you can read more about it here: https://en.bem.info/methodology/
+We will discuss more about it in the upcoming sessions.
+-->
+
+<!-- Begin Header -->
+<header class="header">
+    <a href="/index.html" class="header__logo">
+        <img src="assets/logo.png" alt="Figma"/>
+    </a>
+    <div class="header__content">
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list-item header__nav__list-item--active">
+                    <a href="/pricing">Pricing</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="/solutions">Solutions</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="/community">Community</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <button class="header__button">Sign In</button>
+            <button class="header__button header__button--primary">Register</button>
+        </div>
+    </div>
+</header>
+<!-- End Header -->
+<!-- Begin Hero Section -->
+<section class="hero">
+    <div class="hero__content">
+        <h1 class="hero__title">Make your own luck</h1>
+        <h2 class="hero__subtitle">Ahmed Hamed</h2>
+        <button class="hero__button">Button</button>
+        <button class="hero__button hero__button--primary">
+            Button
+        </button>
+    </div>
+</section>
+<!-- End Hero Section -->
+<!-- Begin Features Section -->
+<section class="features">
+    <h1 class="features__heading">
+        Heading
+    </h1>
+    <h2 class="features__subheading">Subheading</h2>
+    <div class="features__content">
+        <!-- Feature 1 -->
+        <div class="feature">
+            <h3 class="feature__title">"Quote"</h3>
+            <div class="feature__author">
+                <img src="assets/avatar.jpg" alt="Author" class="feature__author-img"/>
+                <div>
+                    <h4 class="feature__author-name">Title</h4>
+                    <p class="feature__author-role">Description</p>
+                </div>
+            </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature">
+            <h3 class="feature__title">"Quote"</h3>
+            <div class="feature__author">
+                <img src="assets/avatar.jpg" alt="Author" class="feature__author-img"/>
+                <div>
+                    <h4 class="feature__author-name">Title</h4>
+                    <p class="feature__author-role">Description</p>
+                </div>
+            </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature">
+            <h3 class="feature__title">"Quote"</h3>
+            <div class="feature__author">
+                <img src="assets/avatar.jpg" alt="Author" class="feature__author-img"/>
+                <div>
+                    <h4 class="feature__author-name">Title</h4>
+                    <p class="feature__author-role">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

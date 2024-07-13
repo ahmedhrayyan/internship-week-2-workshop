@@ -14,6 +14,6 @@ Problem sets can be found the following PDF file:
 
 Solutions to the problem sets can be found in the following files:
 
-1. [HTML & CSS TASK](./html-css-task/index.html)
+1. [HTML & CSS TASK](./html-css-task)
 2. [Fibonacci.js](./fibonacci.js)
 3. [Prefix calculator.js](./prefixNotationCalculator.js)

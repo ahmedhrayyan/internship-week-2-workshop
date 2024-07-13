@@ -1,0 +1,211 @@
+/* MODERN RESET CSS
+    Source: https://www.joshwcomeau.com/css/custom-css-reset/
+ */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* CUSTOM CSS */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: #1E1E1E;
+}
+
+.header {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.header__logo {
+    width: 2.5em;
+}
+
+.header__content {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: .5rem;
+}
+
+.header__nav__list-item a {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.header__nav__list-item--active a {
+    background-color: #F5F5F5;
+}
+
+.header__button {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid #767676;
+    border-radius: 0.5rem;
+    background-color: #E3E3E3;
+    cursor: pointer;
+}
+
+/* Dont forget to add hover and focus states */
+.header__button:hover, .header__button:focus {
+    background-color: #D9D9D9;
+}
+
+.header__button--primary {
+    background-color: #EB6655;
+    border-color: #EB6655;
+    color: white;
+}
+
+.header__button--primary:hover {
+    background-color: #D94A3A;
+}
+
+.header__button + .header__button {
+    margin-left: 0.5rem;
+}
+
+.hero {
+    padding: 2rem 3rem;
+    min-height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero__title {
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.hero__subtitle {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #757575;
+}
+
+/* Dont forget to add hover and focus states */
+.hero__button {
+    padding: 0.5rem 2rem;
+    border: 1px solid #767676;
+    border-radius: 0.5rem;
+    background-color: #E3E3E3;
+    color: #1E1E1E;
+    cursor: pointer;
+}
+
+.hero__button:hover, .hero__button:focus {
+    background-color: #D9D9D9;
+}
+
+.hero__button--primary {
+    background-color: #EB6655;
+    border-color: #EB6655;
+    color: white;
+}
+.hero__button--primary:hover {
+    background-color: #D94A3A;
+}
+
+.hero__button + .hero__button {
+    margin-left: 0.75rem;
+}
+
+.features {
+    padding: 4rem 3rem 3rem;
+}
+
+.features__subheading {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #757575;
+}
+
+.features__content {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+    padding: 1.25rem 1.5rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 0.5rem;
+}
+
+.feature__title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.feature__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.feature__author-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feature__author {
+    color: #757575;
+}
